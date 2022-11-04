@@ -1,0 +1,19 @@
+
+docker pull bushsk/ngnix_webapp:v1
+
+
+mv index.html index.backup
+service apache2 start
+
+service apache2 status
+
+new ternimal
+
+docker images get the image id
+docker tag ImageId dockerhubusername/anyname:tag
+docker images
+docker commit container_id imageid:tag
+docker run -itd -p 8888:80 image_name
+docker exec -it containerid service apache2 restart
+docker login
+docker push imagename
